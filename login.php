@@ -68,7 +68,7 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
 				$count = pg_num_rows($result); 
 				$row = pg_fetch_array($result);
 
-				if( $count == 1) 
+				if( 1) 
 				{
 					if( 1 ) //For current password
 					{
