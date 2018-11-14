@@ -1,0 +1,6 @@
+locationid,sitename,longitude,lattitude,address,circleinfoid,towncitylocation,sitecode,pincode,district,cluster,zone,technician_name,technician_contact,supervisor_name,supervison_contact,cluster_manager_name,cluster_manager_contact,zonal_manager_name,zonal_manager_contact,circle_remarks,vendorinfoid
+1881,IHS_RIV_1167A,6.910083333,4.869972222,"934 Idejo St, Victoria Island, Lagos, Nigeria",81,Lagos,1167A,557052,Lagos,Victoria Island,Nigeria,Raj,9898989891,Nick,8888890439,Joseph,7777779328,Sam,6666668217,,81
+1882,IHS_RIV_1334A,6.919838889,4.876966667,"934 Idejo St, Victoria Island, Lagos, Nigeria",82,Lagos,1334A,557053,Lagos,Victoria Island,Nigeria,Raj,9898989892,Nick,8888890440,Joseph,7777779329,Sam,6666668218,,82
+1883,IHS_RIV_1122A,6.938055556,4.876111111,"934 Idejo St, Victoria Island, Lagos, Nigeria",83,Lagos,1122A,557054,Lagos,Victoria Island,Nigeria,Raj,9898989893,Nick,8888890441,Joseph,7777779330,Sam,6666668219,,83
+1884,IHS_PHC_0986H,6.94591,4.87851,"934 Idejo St, Victoria Island, Lagos, Nigeria",84,Lagos,0986H,557055,Lagos,Victoria Island,Nigeria,Raj,9898989894,Nick,8888890442,Joseph,7777779331,Sam,6666668220,,84
+1885,IHS_RIV_0836A,6.928055556,4.871111111,"934 Idejo St, Victoria Island, Lagos, Nigeria",85,Lagos,0836A,557056,Lagos,Victoria Island,Nigeria,Raj,9898989895,Nick,8888890443,Joseph,7777779332,Sam,6666668221,,85

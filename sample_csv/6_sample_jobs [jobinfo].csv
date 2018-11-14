@@ -1,0 +1,6 @@
+jobinfoid,jobno,circleinfoid,locationid,userid,accurdistance,accurdistanceunit,tokenid,starttime,endtime,status,errorflg,vendorinfoid
+1823,JOB_IHS_RIV_1167A,,1881,,200,m,Token_10783,,,0,0,81
+1824,JOB_IHS_RIV_1334A,,1882,,200,m,Token_10784,,,0,0,82
+1825,JOB_IHS_RIV_1122A,,1883,,200,m,Token_10785,,,0,0,83
+1826,JOB_IHS_PHC_0986H,,1884,,200,m,Token_10786,,,0,0,84
+1827,JOB_IHS_RIV_0836A,,1885,,200,m,Token_10787,,,0,0,85
