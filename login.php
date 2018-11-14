@@ -53,7 +53,7 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
 		else
 		{
 			//$password = hash('sha256', $password);
-			echo $password = hash('sha512', $password);exit;
+			$password = hash('sha512', $password);
 
 			$query = "SELECT * FROM admininfo WHERE emailid='$emailid'";
 			$result = pg_query($conn, $query);
