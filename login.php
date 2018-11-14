@@ -83,7 +83,9 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
 						$result = pg_query($conn, $sess_qry);
 						if (!$result)
 						{
-							$errorMessage = 'Error updating session';
+							//$errorMessage = 'Error updating session';
+              header('Location: index.php');
+              exit;
 						}
 						else
 						{
