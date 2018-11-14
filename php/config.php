@@ -1,5 +1,5 @@
 <?php
-	$conn_string = "host=avpgdb.postgres.database.azure.com port=5432 dbname=avsdatabase user=adminavpgdb@avpgdb password=Rohit@12345 sslmode=require options='--client_encoding=UTF8'";
+	$conn_string = "host=avpgdb.postgres.database.azure.com port=5432 dbname=avd user=adminavpgdb@avpgdb password=Rohit@12345 sslmode=require options='--client_encoding=UTF8'";
 
 	$azure_blob_path = "https://fileserverdata.blob.core.windows.net/fileserverdata2/";
 
