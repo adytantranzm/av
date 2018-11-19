@@ -43,8 +43,8 @@ while ($r1 = pg_fetch_array($res1))
 			$level3seq = $r3['level3seq'];
 			$level3term = $r3['level3term'];
 
-			$nq3 = "INSERT INTO final_asset_tree (termid, groupno, grplabel, indx, term, domain, subdomain, type) VALUES ('".($termid++)."', '3','L3','$level3seq','$level3term','$level3domain','".($subdomain+2)."','1')";
-			pg_query($conn, $nq3) or die(pg_last_error($conn));
+			echo $nq3 = "INSERT INTO final_asset_tree (termid, groupno, grplabel, indx, term, domain, subdomain, type) VALUES ('".($termid++)."', '3','L3','$level3seq','$level3term','$level3domain','".($subdomain+2)."','1')";
+			//pg_query($conn, $nq3) or die(pg_last_error($conn));
 
 			$level4domain = $subdomain+2;
 
