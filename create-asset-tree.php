@@ -56,7 +56,7 @@ while ($r1 = pg_fetch_array($res1))
 				$level4term = $r4['level4term'];
 
 				echo $nq4 = "INSERT INTO final_asset_tree (termid, groupno, grplabel, indx, term, domain, subdomain, type) VALUES ('".($termid++)."', '4','L4','$level4seq','$level4term','$level4domain','".($subdomain+3)."','1')";
-				pg_query($conn, $nq4) or die(pg_last_error($conn));
+				//pg_query($conn, $nq4) or die(pg_last_error($conn));
 
 				$level5domain = $subdomain+3;
 
