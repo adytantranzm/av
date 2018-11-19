@@ -43,7 +43,7 @@ while ($r1 = pg_fetch_array($res1))
 			$level3seq = $r3['level3seq'];
 			$level3term = $r3['level3term'];
 
-			$nq3 = "INSERT INTO final_asset_tree (termid, groupno, grplabel, indx, term, domain, subdomain, type) VALUES ('".($termid++)."', '3','L3','$level3seq','$level3term','$level3domain','".($subdomain+2)."','1')";
+			$nq3 = "INSERT INTO final_asset_tree (termid, groupno, grplabel, indx, term, domain, subdomain, type) VALUES ('".($termid++)."', '3','L3',$level3seq,'$level3term','$level3domain','".($subdomain+2)."','1')";
 			pg_query($conn, $nq3) or die(pg_last_error($conn));
 
 			$level4domain = $subdomain+2;
@@ -55,7 +55,7 @@ while ($r1 = pg_fetch_array($res1))
 				$level4seq = $r4['level4seq'];
 				$level4term = $r4['level4term'];
 
-				$nq4 = "INSERT INTO final_asset_tree (termid, groupno, grplabel, indx, term, domain, subdomain, type) VALUES ('".($termid++)."', '4','L4','$level4seq','$level4term','$level4domain','".($subdomain+3)."','1')";
+				$nq4 = "INSERT INTO final_asset_tree (termid, groupno, grplabel, indx, term, domain, subdomain, type) VALUES ('".($termid++)."', '4','L4',$level4seq,'$level4term','$level4domain','".($subdomain+3)."','1')";
 				pg_query($conn, $nq4) or die(pg_last_error($conn));
 
 				$level5domain = $subdomain+3;
@@ -67,7 +67,7 @@ while ($r1 = pg_fetch_array($res1))
 					$level5seq = $r5['level5seq'];
 					$level5term = $r5['level5term'];
 
-					$nq5 = "INSERT INTO final_asset_tree (termid, groupno, grplabel, indx, term, domain, subdomain, type) VALUES ('".($termid++)."', '5','L5','$level5seq','$level5term','$level5domain',null,'1')";
+					$nq5 = "INSERT INTO final_asset_tree (termid, groupno, grplabel, indx, term, domain, subdomain, type) VALUES ('".($termid++)."', '5','L5','$level5seq','$level5term',$level5domain,null,'1')";
 					pg_query($conn, $nq5) or die(pg_last_error($conn));
 
 					$subdomain++;
