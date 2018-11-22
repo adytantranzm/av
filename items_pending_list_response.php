@@ -236,9 +236,45 @@ date_default_timezone_set('Asia/Calcutta');
 		$data_result['7'] = $row['5'];		
 		$data_result['8'] = $row['33'];
 		$data_result['9'] = $row['34'];
+
 		$data_result['10'] = $row['35'];
 		$data_result['11'] = $row['36'];
 		$data_result['12'] = $row['37'];
+
+		if(empty($data_result['10']))
+		{
+			$sql3 = "SELECT description from tempdata_dropdown where jobinfoid=".$data_result['6']." and "level"='3' limit 1;";
+			$queryRecords3 = pg_query($conn, $sql3);
+			$row3 = pg_fetch_row($queryRecords3);
+			if(!empty($row3[0]))
+			{
+				$data_result['10'] = $row3[0];
+			}
+		}		
+
+		if(empty($data_result['11']))
+		{
+			$sql4 = "SELECT description from tempdata_dropdown where jobinfoid=".$data_result['6']." and "level"='4' limit 1;";
+			$queryRecords4 = pg_query($conn, $sql4);
+			$row4 = pg_fetch_row($queryRecords4);
+			if(!empty($row4[0]))
+			{
+				$data_result['11'] = $row4[0];
+			}
+		}		
+
+		if(empty($data_result['12']))
+		{
+			$sql5 = "SELECT description from tempdata_dropdown where jobinfoid=".$data_result['6']." and "level"='4' limit 1;";
+			$queryRecords5 = pg_query($conn, $sql5);
+			$row4 = pg_fetch_row($queryRecords5);
+			if(!empty($row5[0]))
+			{
+				$data_result['12'] = $row5[0];
+			}
+		}		
+		
+
 
 		$data_result['13'] = $row['6'];
 		if($row['7'] != '')
