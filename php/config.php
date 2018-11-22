@@ -1,7 +1,7 @@
 <?php
 	$conn_string = "host=avpgdb.postgres.database.azure.com port=5432 dbname=avd user=adminavpgdb@avpgdb password=Rohit@12345 options='--client_encoding=UTF8'";
 
-	$azure_blob_path = "https://fileserverdata.blob.core.windows.net/fileserverdata2/";
+	$azure_blob_path = "https://fileserverdata.blob.core.windows.net/fileserverdata/";
 
 	$azure_notification_hub_string = "Endpoint=sb://avnotificationhubnamespacein.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=mT7CyioAja8pl7RFFXCquJmspf6TayxcXzxE94FeVzI=";
 	$azure_notification_hub_name = "avnotificationhub";
