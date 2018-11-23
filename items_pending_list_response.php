@@ -120,7 +120,7 @@ date_default_timezone_set('Asia/Calcutta');
 	//echo $params['columns'][3]['search']['value'];exit;
 	
 	// getting total number records without any search
-	$sql = "SELECT V.visitinfoid, V.scanneritemvalue, L.sitecode, L.sitename, J.jobinfoid, J.jobno, V.scanneritemone, V.scanneroneimageid, V.scanneritemtwo, V.scannertwoimageid, V.scanneritemthree, V.scannerthreeimageid, V.scanneritemfour, V.scannerfourimageid, V.descriptionone, V.genimageoneid, V.descriptiontwo, V.genimagetwoid, V.descriptionthree, V.descriptionfour, V.descriptionfive, V.descriptionsix, V.dateone, V.datetwo, V.dropdownone, V.dropdowntwo, V.isrejected,V.rfrejection,V.rejectedon,V.ispartialverified,V.approvedtype,V.approvedon,V.barcodeinfoid, D1.term AS term1, D2.term AS term2, D3.term AS term3, D4.term AS term4, D5.term AS term5, V.capturedon
+	$sql = "SELECT V.visitinfoid, V.scanneritemvalue, L.sitecode, L.sitename, J.jobinfoid, J.jobno, V.scanneritemone, V.scanneroneimageid, V.scanneritemtwo, V.scannertwoimageid, V.scanneritemthree, V.scannerthreeimageid, V.scanneritemfour, V.scannerfourimageid, V.descriptionone, V.genimageoneid, V.descriptiontwo, V.genimagetwoid, V.descriptionthree, V.descriptionfour, V.descriptionfive, V.descriptionsix, V.dateone, V.datetwo, V.dropdownone, V.dropdowntwo, V.isrejected,V.rfrejection,V.rejectedon,V.ispartialverified,V.approvedtype,V.approvedon,V.barcodeinfoid, D1.term AS term1, D2.term AS term2, D3.term AS term3, D4.term AS term4, D5.term AS term5, V.capturedon,V.linkguid
 		FROM visitinfo AS V
 		LEFT JOIN dropdownmaster AS D1 ON V.level1termid=D1.termid
 		LEFT JOIN dropdownmaster AS D2 ON V.level2termid=D2.termid
@@ -243,7 +243,7 @@ date_default_timezone_set('Asia/Calcutta');
 
 		if(empty($data_result['10']))
 		{
-			$sql3 = "SELECT description from tempdata_dropdown where jobinfoid=".$data_result['6']." and level='3' limit 1";
+			$sql3 = "SELECT description from tempdata_dropdown where linkid='".$row['39']."'' and level='3' limit 1";
 			$queryRecords3 = pg_query($conn, $sql3);
 			$row3 = pg_fetch_row($queryRecords3);
 			if(!empty($row3[0]))
@@ -254,7 +254,7 @@ date_default_timezone_set('Asia/Calcutta');
 
 		if(empty($data_result['11']))
 		{
-			$sql4 = "SELECT description from tempdata_dropdown where jobinfoid=".$data_result['6']." and level='4' limit 1";
+			$sql4 = "SELECT description from tempdata_dropdown  where linkid='".$row['39']."'' and level='4' limit 1";
 			$queryRecords4 = pg_query($conn, $sql4);
 			$row4 = pg_fetch_row($queryRecords4);
 			if(!empty($row4[0]))
@@ -265,7 +265,7 @@ date_default_timezone_set('Asia/Calcutta');
 
 		if(empty($data_result['12']))
 		{
-			$sql5 = "SELECT description from tempdata_dropdown where jobinfoid=".$data_result['6']." and level='4' limit 1";
+			$sql5 = "SELECT description from tempdata_dropdown where linkid='".$row['39']."'' and level='4' limit 1";
 			$queryRecords5 = pg_query($conn, $sql5);
 			$row4 = pg_fetch_row($queryRecords5);
 			if(!empty($row5[0]))
