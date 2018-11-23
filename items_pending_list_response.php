@@ -243,7 +243,7 @@ date_default_timezone_set('Asia/Calcutta');
 
 		if(empty($data_result['10']))
 		{
-			echo $sql3 = "SELECT description from tempdata_dropdown where linkid='".$row['39']."'' and level='3' limit 1";exit;
+			 $sql3 = "SELECT description from tempdata_dropdown where linkid='".$row['39']."' and level='3' limit 1";
 			$queryRecords3 = pg_query($conn, $sql3);
 			$row3 = pg_fetch_row($queryRecords3);
 			if(!empty($row3[0]))
@@ -254,7 +254,7 @@ date_default_timezone_set('Asia/Calcutta');
 
 		if(empty($data_result['11']))
 		{
-			$sql4 = "SELECT description from tempdata_dropdown  where linkid='".$row['39']."'' and level='4' limit 1";
+			$sql4 = "SELECT description from tempdata_dropdown  where linkid='".$row['39']."' and level='4' limit 1";
 			$queryRecords4 = pg_query($conn, $sql4);
 			$row4 = pg_fetch_row($queryRecords4);
 			if(!empty($row4[0]))
@@ -265,7 +265,7 @@ date_default_timezone_set('Asia/Calcutta');
 
 		if(empty($data_result['12']))
 		{
-			$sql5 = "SELECT description from tempdata_dropdown where linkid='".$row['39']."'' and level='4' limit 1";
+			$sql5 = "SELECT description from tempdata_dropdown where linkid='".$row['39']."' and level='4' limit 1";
 			$queryRecords5 = pg_query($conn, $sql5);
 			$row4 = pg_fetch_row($queryRecords5);
 			if(!empty($row5[0]))
