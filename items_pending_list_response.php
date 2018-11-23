@@ -267,7 +267,7 @@ date_default_timezone_set('Asia/Calcutta');
 		{
 			$sql5 = "SELECT description from tempdata_dropdown where linkid='".$row['39']."' and level='5' limit 1";
 			$queryRecords5 = pg_query($conn, $sql5);
-			$row4 = pg_fetch_row($queryRecords5);
+			$row5 = pg_fetch_row($queryRecords5);
 			if(!empty($row5[0]))
 			{
 				$data_result['12'] = $row5[0];
