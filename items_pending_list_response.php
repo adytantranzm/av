@@ -243,7 +243,7 @@ date_default_timezone_set('Asia/Calcutta');
 
 		if(empty($data_result['10']))
 		{
-			$sql3 = "SELECT description from tempdata_dropdown where linkid='".$row['39']."'' and level='3' limit 1";
+			echo $sql3 = "SELECT description from tempdata_dropdown where linkid='".$row['39']."'' and level='3' limit 1";
 			$queryRecords3 = pg_query($conn, $sql3);
 			$row3 = pg_fetch_row($queryRecords3);
 			if(!empty($row3[0]))
