@@ -588,6 +588,16 @@ include 'header.php';
 $(document).ready(function(){
 	
 	var dataTable = $('.items_pending_list').DataTable({
+		"aoColumnDefs": [
+            {
+                "aTargets": [13],
+                "visible": false
+            },
+            {
+                "aTargets": [14],
+                "visible": false
+            }
+            ],
             "bProcessing": true,
             "serverSide": true,
             "dom": 	"<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'f>>" +
