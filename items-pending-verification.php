@@ -172,7 +172,7 @@ else
                     $f = fopen('php://output', 'w');
 
 		    //set CSV column headers
-		    $fields = array('Item ID', 'Asset Barcode', 'Asset Image 1', 'Asset Image 2', 'Site Code', 'Site Name', 'Job ID', 'Job Code', 'Level 1', 'Level 2', 'Level 3', 'Level 4', 'Level 5', 'Other (Remarks)', 'Condition', 'Other Details (Other)', 'Repair Status', 'Year Mfg.', 'Partially Verified?', 'Is Rejected?', 'Reject Reason', 'Rejected On', 'Approved Type', 'Approved On', 'Captured On');
+		    $fields = array('Item ID', 'Asset Barcode', 'Asset Image 1', 'Asset Image 2', 'Site Code', 'Site Name', 'Job ID', 'Job Code', 'Level 1', 'Level 2', 'Level 3', 'Level 4', 'Level 5', 'Other (Remarks)', 'Condition', 'Other Details (Other)',  'Repair Status', 'Year Mfg', 'Partially Verified?', 'Is Rejected?', 'Reject Reason', 'Rejected On', 'Approved Type', 'Approved On', 'Captured On');
 		    fputcsv($f, $fields, $delimiter);
 		    
 		    //output each row of the data, format line as csv and write to file pointer
@@ -334,7 +334,7 @@ else
 					''.$row['term5'].'',
 					''.$row['descriptionone'].'',
 					''.$row['descriptiontwo'].'',
-					''.$row['descriptionthree'].''
+					''.$row['descriptionthree'].'',
 					''.$row['dropdownone'].'',
 					''.$row['dropdowntwo'].'',
 					''.$ispartialverified.'',
