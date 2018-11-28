@@ -172,7 +172,7 @@ else
                     $f = fopen('php://output', 'w');
 
 		    //set CSV column headers
-		    $fields = array('Item ID', 'Asset Barcode', 'Asset Image 1', 'Asset Image 2', 'Site Code', 'Site Name', 'Job ID', 'Job Code', 'Level 1', 'Level 2', 'Level 3', 'Level 4', 'Level 5', 'Serial', 'Serial Image', 'Model', 'Model Image', 'Barcode', 'Barcode Image', 'Scanner 4 Value', 'Scanner 4 Image', 'Brand (Other)', 'Type, Capacity (Other)', 'Other Details (Other)', 'RT/PS', 'Gen Notes', 'Description 6', 'Date 1', 'Date 2', 'Item Status', 'Condition', 'Partially Verified?', 'Is Rejected?', 'Reject Reason', 'Rejected On', 'Approved Type', 'Approved On', 'Captured On');
+		    $fields = array('Item ID', 'Asset Barcode', 'Asset Image 1', 'Asset Image 2', 'Site Code', 'Site Name', 'Job ID', 'Job Code', 'Level 1', 'Level 2', 'Level 3', 'Level 4', 'Level 5', 'Other (Remarks)', 'Condition', 'Other Details (Other)', 'Repair Status', 'Year Mfg.', 'Partially Verified?', 'Is Rejected?', 'Reject Reason', 'Rejected On', 'Approved Type', 'Approved On', 'Captured On');
 		    fputcsv($f, $fields, $delimiter);
 		    
 		    //output each row of the data, format line as csv and write to file pointer
@@ -332,22 +332,9 @@ else
 					''.$row['term3'].'',
 					''.$row['term4'].'',
 					''.$row['term5'].'',
-					''.$row['scanneritemone'].'',
-					''.$scanneroneimageid.'',
-					''.$row['scanneritemtwo'].'',
-					''.$scannertwoimageid.'',
-					''.$row['scanneritemthree'].'',
-					''.$scannerthreeimageid.'',
-					''.$row['scanneritemfour'].'',
-					''.$scannerfourimageid.'',
 					''.$row['descriptionone'].'',
 					''.$row['descriptiontwo'].'',
-					''.$row['descriptionthree'].'',
-					''.$row['descriptionfour'].'',
-					''.$row['descriptionfive'].'',
-					''.$row['descriptionsix'].'',
-					''.$dateone.'',
-					''.$datetwo.'',
+					''.$row['descriptionthree'].''
 					''.$row['dropdownone'].'',
 					''.$row['dropdowntwo'].'',
 					''.$ispartialverified.'',
