@@ -481,16 +481,16 @@ include 'header.php';
 						<th>Barcode Image</th>
 						<th>Scanner 4 Value</th>
 						<th>Scanner 4 Image</th>
-						<th>Brand (Other)</th>
-						<th>Type, Capacity (Other)</th>
+						<th>Other (Remarks)</th>
+						<th>Condition</th>
 						<th>Other Details (Other)</th>
 						<th>RT/PS</th>
 						<th>Gen Notes</th>
 						<th>Description 6</th>
 						<th>Date 1</th>
 						<th>Date 2</th>
-						<th>Item Status</th>
-						<th>Condition</th>
+						<th>Repair Status</th>
+						<th>Mfg. Year</th>
 						<th>Partially Verified?</th>
 						<th>Is Rejected?</th>
 						<th>Reject Reason</th>
@@ -595,6 +595,50 @@ $(document).ready(function(){
             },
             {
                 "aTargets": [14],
+                "visible": false
+            },
+            {
+                "aTargets": [15],
+                "visible": false
+            },
+            {
+                "aTargets": [16],
+                "visible": false
+            },
+            {
+                "aTargets": [17],
+                "visible": false
+            },
+            {
+                "aTargets": [18],
+                "visible": false
+            },
+            {
+                "aTargets": [19],
+                "visible": false
+            },
+            {
+                "aTargets": [20],
+                "visible": false
+            },
+            {
+                "aTargets": [24],
+                "visible": false
+            },
+            {
+                "aTargets": [25],
+                "visible": false
+            },
+            {
+                "aTargets": [26],
+                "visible": false
+            },
+            {
+                "aTargets": [27],
+                "visible": false
+            },
+            {
+                "aTargets": [28],
                 "visible": false
             }
             ],
