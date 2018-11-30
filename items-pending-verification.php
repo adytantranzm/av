@@ -284,6 +284,17 @@ else
 
 				
 
+				if(empty($row['term2']))
+				{
+				$sql8 = "SELECT description from tempdata_dropdown where linkid='".$row['linkguid']."' and level='2' limit 1";
+					$queryRecords8 = pg_query($conn, $sql8);
+					$row8 = pg_fetch_row($queryRecords8);
+					if(!empty($row8[0]))
+					{
+						$row['term2'] = $row8[0];
+					}
+				}
+
 				if(empty($row['term3']))
 				{
 				$sql3 = "SELECT description from tempdata_dropdown where linkid='".$row['linkguid']."' and level='3' limit 1";
