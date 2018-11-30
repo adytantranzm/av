@@ -241,6 +241,18 @@ date_default_timezone_set('Asia/Calcutta');
 		$data_result['11'] = $row['36'];
 		$data_result['12'] = $row['37'];
 
+		
+		if(empty($data_result['9']))
+		{
+			 $sql8 = "SELECT description from tempdata_dropdown where linkid='".$row['39']."' and level='2' limit 1";
+			$queryRecords8 = pg_query($conn, $sql8);
+			$row8 = pg_fetch_row($queryRecords8);
+			if(!empty($row8[0]))
+			{
+				$data_result['9'] = $row8[0];
+			}
+		}
+
 		if(empty($data_result['10']))
 		{
 			 $sql3 = "SELECT description from tempdata_dropdown where linkid='".$row['39']."' and level='3' limit 1";
