@@ -1,5 +1,4 @@
 <?php
-echo "rohit";exit;
 session_start();
 if($_SESSION['user']=='')
 {
