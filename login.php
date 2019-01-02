@@ -32,7 +32,7 @@ function quote_smart($value)
 
 //if(isset($_POST['login_btn']))
 //{
-if(1)
+if(isset($_POST))
 {	    
 	//your site secret key
 	$secret = '6Lcqo2IUAAAAABrY-AIX_EADg5N1WOrR53QFUr0G';
