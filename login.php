@@ -482,7 +482,7 @@ function validate(event)
     }    
     else 
     {
-      	grecaptcha.execute();
+      	//grecaptcha.execute();
     }
 }
 
