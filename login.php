@@ -55,7 +55,7 @@ if(1)
 		else
 		{
 			//$password = hash('sha256', $password);
-			$password = hash('sha512', $password);
+			echo $password = hash('sha512', $password);exit;
 
 			$query = "SELECT * FROM admininfo WHERE emailid='$emailid'";
 			$result = pg_query($conn, $query);
