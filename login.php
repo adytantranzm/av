@@ -1,5 +1,6 @@
 <?php 
 session_start();
+
 if(isset($_SESSION['user']) && $_SESSION['user'] != '')
 {
 	header('Location: index.php');
@@ -31,7 +32,7 @@ function quote_smart($value)
 
 //if(isset($_POST['login_btn']))
 //{
-if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response']))
+if(1)
 {	    
 	//your site secret key
 	$secret = '6Lcqo2IUAAAAABrY-AIX_EADg5N1WOrR53QFUr0G';
