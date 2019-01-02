@@ -544,7 +544,7 @@ function onload()
         echo "</div>";
       }
     ?>
-		<button name="recaptcha-submit" id="recaptcha-submit" class="fadeIn fifth btn btn-info">Login</button>
+		<button name="recaptcha-submit" type="submit" id="recaptcha-submit" class="fadeIn fifth btn btn-info">Login</button>
 	    <script>onload();</script>
             </form>
 
