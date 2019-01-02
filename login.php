@@ -493,7 +493,7 @@ function onload()
 }
 </script>
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 </head>
 <body>
@@ -515,14 +515,7 @@ function onload()
 			<img src="php/captcha.php" class="fadeIn fourth" style="vertical-align: middle;">
 			<input type="text" id="vercode" class="fadeIn fourth" style="max-width: 250px;" name="vercode" autocomplete="off" value="<?php echo $captcha?>" placeholder="Enter Captcha" required />
 		</p-->
-		<div align='center' style='margin: 5px;'
-			id='recaptcha' 
-			class="g-recaptcha"
-			data-sitekey="6Lcqo2IUAAAAAMac1Ev32prXPIvLdAcI_8UpM6Cn"
-			data-callback="onSubmit"
-			data-size="invisible"
-			data-badge="inline">
-		</div>
+		
     <?php
       if ($errorMessage != '')
       {
