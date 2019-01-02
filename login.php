@@ -488,8 +488,7 @@ function validate(event)
 
 function onload() 
 {
-    var element = document.getElementById('recaptcha-submit');
-    element.onclick = validate;
+   
 }
 </script>
 
